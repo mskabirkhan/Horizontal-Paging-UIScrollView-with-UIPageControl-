@@ -1,5 +1,5 @@
 # Horizontal-Paging-UIScrollView-with-UIPageControl-
-Please see the demo in here: ![](https://github.com/shahria73/Horizontal-Paging-UIScrollView-with-UIPageControl-/blob/master/ezgif.com-video-to-gif.gif)
+: ![Please see the demo in here](https://github.com/shahria73/Horizontal-Paging-UIScrollView-with-UIPageControl-/blob/master/ezgif.com-video-to-gif.gif)
 
 Horizontal Paging UIScrollView with UIPageControl Swift 5 XCode 10.2.1
 This a app that can slide horizontally page by page!
