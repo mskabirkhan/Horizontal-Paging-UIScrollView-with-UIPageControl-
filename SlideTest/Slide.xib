@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="Slide" customModule="SlideTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="One" translatesAutoresizingMaskIntoConstraints="NO" id="f1f-EL-MDT">
+                    <rect key="frame" x="0.0" y="45" width="375" height="462"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="462" id="LUU-ct-CMB"/>
+                    </constraints>
+                </imageView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Tilte" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="B0D-YO-Rjr">
+                    <rect key="frame" x="24" y="507" width="327" height="47"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="47" id="XwW-re-Jmn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Tilte" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="XEa-9S-jIa">
+                    <rect key="frame" x="24" y="562" width="327" height="109"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="109" id="e2J-VN-b87"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" red="0.72137080988544589" green="0.82581768134715028" blue="0.72205478578642246" alpha="0.99020686619718312" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="f1f-EL-MDT" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="25" id="9ON-vt-bZL"/>
+                <constraint firstItem="f1f-EL-MDT" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="25" id="Lid-Cy-gD9"/>
+                <constraint firstItem="XEa-9S-jIa" firstAttribute="top" secondItem="B0D-YO-Rjr" secondAttribute="bottom" constant="8" id="OIK-HM-RnY"/>
+                <constraint firstItem="f1f-EL-MDT" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="XLb-lp-7RX"/>
+                <constraint firstItem="B0D-YO-Rjr" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="24" id="gj9-RH-jIt"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="XEa-9S-jIa" secondAttribute="trailing" constant="24" id="nDj-ii-CMG"/>
+                <constraint firstItem="B0D-YO-Rjr" firstAttribute="top" secondItem="f1f-EL-MDT" secondAttribute="bottom" id="ocV-am-Rjk"/>
+                <constraint firstItem="f1f-EL-MDT" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="oif-zh-pLX"/>
+                <constraint firstItem="f1f-EL-MDT" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="u3N-hd-Bdq"/>
+                <constraint firstItem="XEa-9S-jIa" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="24" id="u75-os-D1n"/>
+                <constraint firstItem="f1f-EL-MDT" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="uNv-eb-Z3A"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="B0D-YO-Rjr" secondAttribute="trailing" constant="24" id="vsi-hM-yNE"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="imageView" destination="f1f-EL-MDT" id="WmK-nd-goK"/>
+                <outlet property="labelDesc" destination="XEa-9S-jIa" id="WzL-tM-9Bs"/>
+                <outlet property="labelTitle" destination="B0D-YO-Rjr" id="rLH-dj-Tej"/>
+            </connections>
+            <point key="canvasLocation" x="34.782608695652179" y="34.821428571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="One" width="400" height="400"/>
+    </resources>
+</document>
